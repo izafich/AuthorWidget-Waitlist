@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create stunning, professional author boxes for your blog in seconds — no coding needed. Join the waitlist for early access.">
+    <meta name="theme-color" content="#0f172a">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://authorwidget.com">
+    <meta property="og:title" content="AuthorWidget — Make Your Author Bio Stand Out">
+    <meta property="og:description" content="Create stunning, professional author boxes for your blog in seconds — no coding needed.">
+    <meta property="og:image" content="http://static.photos/technology/1200x630/42">
+
+    <title>AuthorWidget — Make Your Author Bio Stand Out | Join Waitlist</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#22c55e',
+                        secondary: '#3b82f6',
+                        dark: '#0f172a',
+                        darker: '#020617',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'gradient': 'gradient 15s ease infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        gradient: {
+                            '0%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                            '100%': { backgroundPosition: '0% 50%' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-white antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 bg-dark/80 backdrop-blur-md border-b border-white/5 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <span class="font-bold text-xl tracking-tight">AuthorWidget</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="text-sm text-gray-400 hover:text-white transition-colors">Features</a>
+                    <a href="#testimonials" class="text-sm text-gray-400 hover:text-white transition-colors">Testimonials</a>
+                    <a href="#waitlist" class="text-sm bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition-all">Join Waitlist</a>
+                </div>
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-darker border-t border-white/5" id="mobile-menu">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="#features" class="block px-3 py-2 text-base text-gray-400 hover:text-white">Features</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base text-gray-400 hover:text-white">Testimonials</a>
+                <a href="#waitlist" class="block px-3 py-2 text-base text-primary">Join Waitlist</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden" id="waitlist">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-slow"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full blur-3xl animate-gradient"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="text-center lg:text-left space-y-8 animate-fade-in">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all cursor-pointer group">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                        </span>
+                        <span class="text-sm font-medium text-gray-300 group-hover:text-white transition-colors">Launching Soon on Product Hunt 🚀</span>
+                    </div>
+
+                    <!-- Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400">
+                        Make Your Author Bio <br/>
+                        <span class="text-primary">Stand Out</span>
+                    </h1>
+
+                    <!-- Subheadline -->
+                    <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Create stunning, professional author boxes for your blog in seconds — no coding needed. Boost your credibility and engage your readers.
+                    </p>
+
+                    <!-- Urgency -->
+                    <div class="flex items-center justify-center lg:justify-start gap-2 text-sm font-semibold text-primary">
+                        <i data-lucide="clock" class="w-4 h-4"></i>
+                        <span>Launching in 7 days — be first!</span>
+                    </div>
+
+                    <!-- Form -->
+                    <form action="https://formspree.io/f/xykbgegp" method="POST" class="w-full max-w-md mx-auto lg:mx-0 space-y-4" id="waitlist-form">
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                            <div class="relative flex flex-col sm:flex-row gap-3 bg-black/30 backdrop-blur-xl p-2 rounded-2xl border border-white/10">
+                                <input 
+                                    type="email" 
+                                    name="email" 
+                                    required 
+                                    placeholder="Enter your email"
+                                    class="flex-1 px-6 py-4 bg-transparent text-white placeholder-gray-500 outline-none rounded-xl text-base"
+                                >
+                                <button 
+                                    type="submit" 
+                                    class="px-8 py-4 bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/25 flex items-center justify-center gap-2 whitespace-nowrap"
+                                >
+                                    <span>Get Early Access</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 text-center sm:text-left flex items-center justify-center sm:justify-start gap-1">
+                            <i data-lucide="shield-check" class="w-3 h-3"></i>
+                            No spam. Only launch updates + exclusive early access
+                        </p>
+                    </form>
+
+                    <!-- Social Proof Mini -->
+                    <div class="flex items-center justify-center lg:justify-start gap-4 pt-4">
+                        <div class="flex -space-x-2">
+                            <img src="http://static.photos/people/200x200/1" alt="User" class="w-8 h-8 rounded-full border-2 border-dark">
+                            <img src="http://static.photos/people/200x200/2" alt="User" class="w-8 h-8 rounded-full border-2 border-dark">
+                            <img src="http://static.photos/people/200x200/3" alt="User" class="w-8 h-8 rounded-full border-2 border-dark">
+                            <div class="w-8 h-8 rounded-full border-2 border-dark bg-primary/20 flex items-center justify-center text-xs font-bold text-primary">+50</div>
+                        </div>
+                        <p class="text-sm text-gray-400">Trusted by bloggers & indie creators 🚀</p>
+                    </div>
+                </div>
+
+                <!-- Hero Image/Illustration -->
+                <div class="relative hidden lg:block">
+                    <div class="relative animate-float">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-primary/30 to-secondary/30 rounded-3xl blur-2xl"></div>
+                        <img 
+                            src="http://static.photos/technology/640x360/42" 
+                            alt="AuthorWidget Preview" 
+                            class="relative rounded-2xl border border-white/10 shadow-2xl w-full"
+                        >
+                        <!-- Floating Card Overlay -->
+                        <div class="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 shadow-xl animate-pulse-slow">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                                    <i data-lucide="user" class="w-5 h-5 text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-white">Jane Smith</p>
+                                    <p class="text-xs text-gray-400">Tech Blogger</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="relative py-24 bg-darker">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Everything you need to <span class="text-primary">stand out</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Professional author boxes that work seamlessly with any blog platform. No technical skills required.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="relative">
+                        <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="palette" class="w-6 h-6 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Customizable & Professional</h3>
+                        <p class="text-gray-400 leading-relaxed">Choose from stunning templates and customize colors, fonts, and layouts to match your brand perfectly.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="relative">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="globe" class="w-6 h-6 text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Works on Any Platform</h3>
+                        <p class="text-gray-400 leading-relaxed">WordPress, Ghost, Medium, Substack, or custom blogs. One snippet of code works everywhere.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="relative">
+                        <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="zap" class="w-6 h-6 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Easy No-Code Setup</h3>
+                        <p class="text-gray-400 leading-relaxed">Get started in seconds. Just copy and paste — no developers needed, no headaches.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section id="testimonials" class="relative py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Loved by early <span class="text-secondary">beta testers</span></h2>
+                <p class="text-gray-400">Join hundreds of content creators already using AuthorWidget</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"Finally, an author bio solution that doesn't require hiring a developer. Set up took 2 minutes and it looks incredible."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="http://static.photos/people/200x200/11" alt="Sarah" class="w-10 h-10 rounded-full">
+                        <div>
+                            <p class="font-semibold text-white">Sarah Chen</p>
+                            <p class="text-sm text-gray-500">Lifestyle Blogger</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"The customization options are fantastic. My author box now matches my brand colors perfectly. Conversion on my newsletter doubled!"</p>
+                    <div class="flex items-center gap-3">
+                        <img src="http://static.photos/people/200x200/22" alt="Marcus" class="w-10 h-10 rounded-full">
+                        <div>
+                            <p class="font-semibold text-white">Marcus Johnson</p>
+                            <p class="text-sm text-gray-500">Indie Hacker</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"Game changer for my Substack. Professional look without the technical hassle. Highly recommend joining the waitlist!"</p>
+                    <div class="flex items-center gap-3">
+                        <img src="http://static.photos/people/200x200/33" alt="Emma" class="w-10 h-10 rounded-full">
+                        <div>
+                            <p class="font-semibold text-white">Emma Rodriguez</p>
+                            <p class="text-sm text-gray-500">Newsletter Writer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-12">
+                <div class="text-center">
+                    <p class="text-3xl font-bold text-primary">500+</p>
+                    <p class="text-sm text-gray-500 mt-1">Waitlist Members</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-bold text-secondary">30+</p>
+                    <p class="text-sm text-gray-500 mt-1">Platform Support</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-bold text-primary">2min</p>
+                    <p class="text-sm text-gray-500 mt-1">Setup Time</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-bold text-secondary">100%</p>
+                    <p class="text-sm text-gray-500 mt-1">Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24 bg-darker overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl sm:text-5xl font-bold mb-6">Ready to make your bio <span class="text-primary">unforgettable</span>?</h2>
+            <p class="text-xl text-gray-400 mb-8">Join 500+ creators on the waitlist. Get early access and exclusive pricing.</p>
+            
+            <form action="https://formspree.io/f/xykbgegp" method="POST" class="max-w-md mx-auto">
+                <div class="flex flex-col sm:flex-row gap-3 bg-black/30 p-2 rounded-2xl border border-white/20">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        required 
+                        placeholder="Enter your email"
+                        class="flex-1 px-6 py-4 bg-transparent text-white placeholder-gray-500 outline-none rounded-xl text-base"
+                    >
+                    <button 
+                        type="submit" 
+                        class="px-8 py-4 bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/25 whitespace-nowrap"
+                    >
+                        Join Waitlist
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <span class="font-bold text-xl">AuthorWidget</span>
+                </div>
+                
+                
+
+                
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-white/5 text-center text-sm text-gray-600">
+                <p>&copy; 2026 AuthorWidget — Built by SE Hozaifa</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking links
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Form handling with Formspree
+        const forms = document.querySelectorAll('form');
+        forms.forEach(form => {
+            form.addEventListener('submit', async (e) => {
+                const button = form.querySelector('button[type="submit"]');
+                const originalText = button.innerHTML;
+                
+                // Loading state
+                button.disabled = true;
+                button.innerHTML = '<span class="animate-pulse">Joining...</span>';
+                
+                // Let Formspree handle the submission normally
+                // This just adds visual feedback while the form submits
+                setTimeout(() => {
+                    button.innerHTML = '<span>Joined! 🎉</span>';
+                    button.classList.add('bg-green-600');
+                    
+                    setTimeout(() => {
+                        button.disabled = false;
+                        button.innerHTML = originalText;
+                        button.classList.remove('bg-green-600');
+                        form.reset();
+                    }, 3000);
+                }, 1000);
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg', 'shadow-black/20');
+            } else {
+                navbar.classList.remove('shadow-lg', 'shadow-black/20');
+            }
+        });
+    </script>
+</body>
+</html>
