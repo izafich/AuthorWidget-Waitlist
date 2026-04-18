@@ -109,7 +109,6 @@
             animation-fill-mode: forwards;
         }
         
-        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -127,7 +126,6 @@
             background: #16a34a;
         }
 
-        /* Success message transition */
         .success-transition {
             transition: all 0.3s ease;
         }
@@ -152,7 +150,6 @@
                 </button>
             </div>
         </div>
-        <!-- Mobile Menu -->
         <div class="md:hidden hidden bg-darker/95 backdrop-blur-lg border-t border-white/10" id="mobile-menu">
             <div class="px-4 pt-2 pb-4 space-y-2">
                 <a href="#features" class="block px-3 py-2 text-base text-gray-400 hover:text-white hover:bg-white/5 rounded-lg transition-all">Features</a>
@@ -162,21 +159,18 @@
         </div>
     </nav>
 
-    <!-- Hero Section - Updated with 30% Discount + Product Hunt Launch + E-E-AT Mention + Social Proof -->
+    <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden" id="waitlist">
-        <!-- Enhanced Background Effects -->
         <div class="absolute inset-0 overflow-hidden">
             <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-slow"></div>
             <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full blur-3xl animate-gradient"></div>
-            <!-- Animated grid pattern -->
             <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, rgba(34,197,94,0.2) 1px, transparent 0); background-size: 40px 40px;"></div>
         </div>
 
         <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-            <!-- Centered Content - Full Width Centering -->
             <div class="flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
-                <!-- Badge - Updated with Product Hunt Launch Date -->
+                <!-- Badge -->
                 <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all cursor-pointer group mb-8 animate-fade-in-up">
                     <span class="relative flex h-2.5 w-2.5">
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
@@ -185,7 +179,7 @@
                     <span class="text-sm font-medium text-gray-300 group-hover:text-white transition-colors">🚀 Launching May 3rd on Product Hunt</span>
                 </div>
 
-                <!-- Headline - Bold 30% Lifetime Discount + Launch mention -->
+                <!-- Headline -->
                 <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in-up delay-100">
                     <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400">
                         30% Lifetime Discount
@@ -199,13 +193,13 @@
                     </span>
                 </h1>
 
-                <!-- Subheadline - Includes SEO E-E-A-T mention (Schema.org markup) -->
+                <!-- Subheadline with SEO mention -->
                 <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-6 animate-fade-in-up delay-200">
                     Create stunning, professional author boxes for your blog in seconds — no coding needed. 
                     <span class="text-primary font-medium">Boost Google E-E-A-T with automatic Schema.org markup</span> — improve credibility & SEO.
                 </p>
 
-                <!-- Social Proof Line: Join 500+ builders waiting for AuthorWidget -->
+                <!-- Social Proof -->
                 <div class="animate-fade-in-up delay-200 mb-6">
                     <div class="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm px-5 py-2 rounded-full border border-white/10">
                         <i data-lucide="users" class="w-4 h-4 text-primary"></i>
@@ -214,15 +208,15 @@
                     </div>
                 </div>
 
-                <!-- Urgency Badge - Launch countdown feel -->
+                <!-- Urgency Badge -->
                 <div class="flex items-center justify-center gap-2 text-sm font-semibold bg-primary/10 px-4 py-2 rounded-full mb-8 animate-fade-in-up delay-200">
                     <i data-lucide="clock" class="w-4 h-4 text-primary"></i>
                     <span class="text-primary">Claim 30% Lifetime Discount — limited early access</span>
                 </div>
 
-                <!-- Form - With custom client-side handler to show Success Message + Product Hunt CTA button -->
+                <!-- Form Container -->
                 <div class="w-full max-w-2xl mx-auto space-y-4 mb-6 animate-fade-in-up delay-300" id="form-container">
-                    <!-- Regular form wrapper -->
+                    <!-- Signup Form Wrapper -->
                     <div id="signup-form-wrapper">
                         <div class="relative group">
                             <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-700 group-hover:duration-300"></div>
@@ -249,14 +243,13 @@
                         </p>
                     </div>
 
-                    <!-- Success Message Area (hidden by default) -->
+                    <!-- Success Message Area -->
                     <div id="success-message-area" class="hidden w-full bg-gradient-to-r from-primary/20 to-secondary/20 backdrop-blur-md rounded-2xl border border-primary/30 p-6 text-center space-y-5 success-transition">
                         <div class="flex flex-col items-center gap-2">
                             <i data-lucide="party-popper" class="w-10 h-10 text-primary"></i>
                             <p class="text-xl font-bold text-white">You're in! 🎉</p>
                             <p class="text-gray-200 text-base">Now, follow us on Product Hunt to claim your 30% discount on launch day.</p>
                         </div>
-                        <!-- Prominent CTA button linking to PH Teaser -->
                         <a href="https://www.producthunt.com/products/authorwidget" target="_blank" rel="noopener noreferrer" 
                            class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold rounded-xl transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-orange-500/40 w-full sm:w-auto min-w-[260px]">
                             <i data-lucide="rocket" class="w-5 h-5"></i>
@@ -266,7 +259,7 @@
                     </div>
                 </div>
 
-                <!-- Social Proof Mini + Trust Badge (updated) -->
+                <!-- Social Proof Mini -->
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 animate-fade-in-up delay-400">
                     <div class="flex -space-x-2">
                         <div class="w-10 h-10 rounded-full border-2 border-dark bg-gradient-to-br from-gray-700 to-gray-600 flex items-center justify-center text-white font-bold text-sm">JD</div>
@@ -280,7 +273,7 @@
                     </p>
                 </div>
                 
-                <!-- Floating Card Elements (Decorative) -->
+                <!-- Floating Card Elements -->
                 <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 hidden lg:flex gap-4 opacity-40 pointer-events-none">
                     <div class="bg-white/5 backdrop-blur-sm rounded-xl px-3 py-1.5 text-xs text-gray-300 border border-white/10">✨ Schema.org E-E-A-T</div>
                     <div class="bg-white/5 backdrop-blur-sm rounded-xl px-3 py-1.5 text-xs text-gray-300 border border-white/10">⚡ 2-min setup</div>
@@ -290,7 +283,7 @@
         </div>
     </section>
 
-    <!-- Features Section (enhanced with SEO mention) -->
+    <!-- Features Section -->
     <section id="features" class="relative py-24 bg-darker">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -300,7 +293,6 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Feature 1 - Customizable -->
                 <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5">
                     <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     <div class="relative">
@@ -312,7 +304,6 @@
                     </div>
                 </div>
 
-                <!-- Feature 2 - E-E-A-T & Schema.org Focus -->
                 <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-secondary/5">
                     <div class="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     <div class="relative">
@@ -324,7 +315,6 @@
                     </div>
                 </div>
 
-                <!-- Feature 3 - No Code -->
                 <div class="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5">
                     <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     <div class="relative">
@@ -339,7 +329,7 @@
         </div>
     </section>
 
-    <!-- Social Proof / Testimonials section remains but updated stats -->
+    <!-- Testimonials Section -->
     <section id="testimonials" class="relative py-24 bg-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -349,7 +339,6 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
-                <!-- Testimonial 1 -->
                 <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-primary/30 transition-all duration-300">
                     <div class="flex items-center gap-1 mb-4">
                         <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
@@ -368,7 +357,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
                 <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-secondary/30 transition-all duration-300">
                     <div class="flex items-center gap-1 mb-4">
                         <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
@@ -387,7 +375,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 3 -->
                 <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-primary/30 transition-all duration-300">
                     <div class="flex items-center gap-1 mb-4">
                         <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
@@ -407,7 +394,6 @@
                 </div>
             </div>
 
-            <!-- Stats -->
             <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-12">
                 <div class="text-center">
                     <p class="text-4xl font-bold text-primary">500+</p>
@@ -429,7 +415,7 @@
         </div>
     </section>
     
-    <!-- CTA Section - Additional waitlist -->
+    <!-- CTA Section -->
     <section class="relative py-24 bg-darker overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -455,7 +441,7 @@
         </div>
     </section>
 
-   <!-- Footer -->
+    <!-- Footer -->
     <footer class="bg-dark border-t border-white/10 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col items-center justify-center">
@@ -472,27 +458,29 @@
     <!-- JavaScript -->
     <script>
         // Initialize Lucide Icons
-        lucide.createIcons();
+        if (typeof lucide !== 'undefined' && lucide.createIcons) {
+            lucide.createIcons();
+        }
 
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         
-        if(mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
                 mobileMenu.classList.toggle('hidden');
             });
 
-            mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
+            mobileMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
                     mobileMenu.classList.add('hidden');
                 });
             });
         }
 
         // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -501,87 +489,73 @@
             });
         });
 
-        // Helper function to handle post-signup flow: show success message + PH CTA button
-        function handleSignup(emailInputId, submitBtnId, formContainerId, successAreaId, isFooter = false) {
-            const emailInput = document.getElementById(emailInputId);
-            const submitBtn = document.getElementById(submitBtnId);
-            const formWrapper = document.getElementById(formContainerId);
-            const successArea = document.getElementById(successAreaId);
-            
-            if (!emailInput || !submitBtn || !formWrapper || !successArea) return;
-            
-            const submitHandler = (e) => {
+        // Handle signup and show success message
+        const submitBtn = document.getElementById('submit-email-btn');
+        const emailInput = document.getElementById('waitlist-email');
+        const formWrapper = document.getElementById('signup-form-wrapper');
+        const successArea = document.getElementById('success-message-area');
+
+        if (submitBtn && emailInput && formWrapper && successArea) {
+            submitBtn.addEventListener('click', function(e) {
                 e.preventDefault();
                 const email = emailInput.value.trim();
-                if (!email || !email.includes('@')) {
+                if (!email || email.indexOf('@') === -1) {
                     alert('Please enter a valid email address.');
                     return;
                 }
                 
-                // Simulate signup success (replaces form with success message)
-                // Store email locally if needed (just for demo)
-                localStorage.setItem('authorwidget_waitlist_email', email);
-                
-                // Hide the original form wrapper
+                // Hide form, show success message
                 formWrapper.classList.add('hidden');
-                // Show success message area
                 successArea.classList.remove('hidden');
-                // Re-init Lucide icons in success area (for party-popper & rocket)
-                lucide.createIcons();
                 
-                // Optional: also could call actual backend endpoint, but we keep UX consistent with spec
-                console.log(`Signed up: ${email} - 30% discount reserved.`);
-            };
+                // Re-initialize icons in success area
+                if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                    lucide.createIcons();
+                }
+                
+                console.log('Signed up:', email);
+            });
             
-            submitBtn.addEventListener('click', submitHandler);
-            emailInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') submitHandler(e);
+            emailInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    submitBtn.click();
+                }
             });
         }
-        
-        // Initialize main hero form success flow
-        handleSignup('waitlist-email', 'submit-email-btn', 'signup-form-wrapper', 'success-message-area', false);
-        
-        // Also handle footer CTA: redirect to hero? better to unify behavior - scroll to hero or show same success?
-        // For consistency, when user signs up via footer, we scroll to hero and trigger success if they haven't signed up.
-        const footerEmail = document.getElementById('footer-email');
+
+        // Footer signup - scroll to hero and trigger
         const footerBtn = document.getElementById('footer-submit-btn');
-        if (footerEmail && footerBtn) {
-            footerBtn.addEventListener('click', (e) => {
+        const footerEmail = document.getElementById('footer-email');
+        
+        if (footerBtn && footerEmail) {
+            footerBtn.addEventListener('click', function(e) {
                 e.preventDefault();
                 const email = footerEmail.value.trim();
-                if (!email || !email.includes('@')) {
+                if (!email || email.indexOf('@') === -1) {
                     alert('Please enter a valid email address.');
                     return;
                 }
-                // Scroll to hero section smoothly
+                
                 const heroSection = document.getElementById('waitlist');
                 if (heroSection) {
                     heroSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    // After small delay, prefill hero email if needed? and trigger success if not already shown.
-                    setTimeout(() => {
+                    setTimeout(function() {
                         const heroEmail = document.getElementById('waitlist-email');
                         const heroFormWrapper = document.getElementById('signup-form-wrapper');
-                        const heroSuccessArea = document.getElementById('success-message-area');
-                        if (heroFormWrapper && !heroFormWrapper.classList.contains('hidden')) {
-                            if (heroEmail) heroEmail.value = email;
-                            // Simulate click on hero submit
-                            const heroBtn = document.getElementById('submit-email-btn');
-                            if (heroBtn) heroBtn.click();
-                        } else if (heroSuccessArea && heroSuccessArea.classList.contains('hidden')) {
-                            // fallback
+                        if (heroFormWrapper && heroFormWrapper.classList.contains('hidden') === false) {
                             if (heroEmail) heroEmail.value = email;
                             const heroBtn = document.getElementById('submit-email-btn');
                             if (heroBtn) heroBtn.click();
                         }
-                    }, 300);
+                    }, 400);
                 }
             });
         }
 
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
                 navbar.classList.add('shadow-lg', 'shadow-black/20', 'bg-dark/90');
             } else {
@@ -589,9 +563,15 @@
             }
         });
         
-        // Re-run lucide after any dynamic content updates (success area)
-        const observer = new MutationObserver(() => lucide.createIcons());
-        observer.observe(document.body, { childList: true, subtree: true });
+        // Re-run lucide after any dynamic content
+        if (typeof MutationObserver !== 'undefined') {
+            const observer = new MutationObserver(function() {
+                if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                    lucide.createIcons();
+                }
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+        }
     </script>
  
 </body>
